@@ -39933,7 +39933,7 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-right {
   --bs-prismjs-btn-bg: #2d2d5e;
   --bs-prismjs-btn-bg-hover: #2d2d5e;
   --bs-prismjs-btn-color: rgba(255, 255, 255, 0.75);
-  --bs-prismjs-btn-color-hover: #7239ea;
+  --bs-prismjs-btn-color-hover: #009ef7;
   --bs-prismjs-scrollbar-color: #323268;
   --bs-prismjs-scrollbar-color-hover: #373773;
 }
@@ -39943,7 +39943,7 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-right {
   --bs-prismjs-btn-bg: #27273d;
   --bs-prismjs-btn-bg-hover: #27273d;
   --bs-prismjs-btn-color: rgba(255, 255, 255, 0.75);
-  --bs-prismjs-btn-color-hover: #7239ea;
+  --bs-prismjs-btn-color-hover: #009ef7;
   --bs-prismjs-scrollbar-color: #2d2d46;
   --bs-prismjs-scrollbar-color-hover: #333350;
 }
@@ -41526,9 +41526,9 @@ table.dataTable.dtr-inline.collapsed
   mask-position: center;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
-  background-color: #7239ea;
-  -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3e%3crect opacity='0.3' x='2' y='2' width='20' height='20' rx='5' fill='%237239EA'/%3e%3crect x='6.0104' y='10.9247' width='12' height='2' rx='1' fill='%237239EA'/%3e%3c/svg%3e");
-  mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3e%3crect opacity='0.3' x='2' y='2' width='20' height='20' rx='5' fill='%237239EA'/%3e%3crect x='6.0104' y='10.9247' width='12' height='2' rx='1' fill='%237239EA'/%3e%3c/svg%3e");
+  background-color: #009ef7;
+  -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3e%3crect opacity='0.3' x='2' y='2' width='20' height='20' rx='5' fill='%23009ef7'/%3e%3crect x='6.0104' y='10.9247' width='12' height='2' rx='1' fill='%23009ef7'/%3e%3c/svg%3e");
+  mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3e%3crect opacity='0.3' x='2' y='2' width='20' height='20' rx='5' fill='%23009ef7'/%3e%3crect x='6.0104' y='10.9247' width='12' height='2' rx='1' fill='%23009ef7'/%3e%3c/svg%3e");
 }
 table.dataTable > tbody > tr.child span.dtr-title {
   display: inline-block;
@@ -42398,8 +42398,8 @@ body.swal2-height-auto {
   border-bottom-color: var(--bs-dropdown-box-shadow) !important;
 }
 .card-rounded-bottom .apexcharts-canvas svg {
-  border-bottom-left-radius: 0.95rem;
-  border-bottom-right-radius: 0.95rem;
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
 }
 .rounded .apexcharts-canvas svg {
   border-radius: 0.475rem !important;
