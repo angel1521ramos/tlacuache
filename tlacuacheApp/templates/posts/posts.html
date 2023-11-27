@@ -1,11 +1,9 @@
-{% extends 'root/base/base.html' %}
-
-{% block content %}
+{% extends 'root/base/base.html' %} {% block content %}
 <div class="mb-17">
     <!--begin::Content-->
     <div class="d-flex flex-stack mb-5">
         <!--begin::Title-->
-        <h3 class="text-gray-900">Posts</h3>
+        <h3 class="text-gray-900">Noticias</h3>
         <!--end::Title-->
     </div>
     <!--end::Content-->
@@ -16,8 +14,6 @@
 
     <!--begin::Row-->
     <div class="row g-10">
-
-
         {% for x in posts %}
         <!--begin::Col-->
         <div class="col-md-4">
@@ -27,8 +23,7 @@
                 <a class="d-block overlay">
                     <!--begin::Image-->
                     <div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded min-h-300px"
-                        style="background-image:url('{{ x.image }}')">
-                    </div>
+                        style="background-image:url('{{ x.image }}')"></div>
                     <!--end::Image-->
                 </a>
                 <!--end::Overlay-->
@@ -36,13 +31,13 @@
                 <!--begin::Body-->
                 <div class="mt-5">
                     <!--begin::Title-->
-                    <a href="{{x.url}}" target="_blank"
+                    <a href="{% url 'detail_posts' x.id %}"
                         class="fs-1 text-gray-900 fw-bold text-hover-primary text-gray-900 lh-base">
                         {{x.title}}</a>
                     <!--end::Title-->
 
                     <!--begin::Text-->
-                    <div class="fw-semibold fs-5 text-gray-600 text-gray-900 my-4">
+                    <div class="fw-semibold fs-5 text-gray-600 text-gray-900 my-4 text-multiline-3">
                         {{x.description}}
                     </div>
                     <!--end::Text-->
@@ -60,9 +55,7 @@
             <!--end::Feature post-->
         </div>
         <!--end::Col-->
-
         {% endfor %}
-
     </div>
     <!--end::Row-->
 </div>

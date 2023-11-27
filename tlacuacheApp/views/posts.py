@@ -15,7 +15,9 @@ def posts(request):
 
 #detalle de post
 def detail_posts(request, posts_id):
-    posts = get_object_or_404(Post, pk=posts_id)
+    #llamamos los posts de la bd
+    posts = Post.objects.exclude(pk=posts_id)
+    post = get_object_or_404(Post, pk=posts_id)
     return render(
-        request, "posts/detail.html", {"posts": posts}
+        request, "posts/detail.html", {"post": post, "posts": posts}
     )
